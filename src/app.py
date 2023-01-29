@@ -8,8 +8,9 @@ ENV_NAME_PATTERN = os.environ["NAME_PATTERN"]
 DEFAULT_NAME = os.environ["DEFAULT_DISPLAY_NAME"]
 GUILD_ID = int(os.environ["DISCORD_SERVER_ID"])
 BOT_TOKEN = os.environ["DISCORD_BOT_TOKEN"]
+DRY_RUN = os.environ["DRY_RUN"]
 
-if not all([ENV_NAME_PATTERN, DEFAULT_NAME, GUILD_ID, BOT_TOKEN]):
+if not all([ENV_NAME_PATTERN, DEFAULT_NAME, GUILD_ID, BOT_TOKEN, DRY_RUN]):
     print('not all environment variables were supplied')
     sys.exit(1)
 
@@ -39,7 +40,8 @@ def get_misnamed_members() -> list[discord.Member]:
 async def rename_members(members: list[discord.Member]):
     for member in members:
         print(f'Renamed: {member.name} | {member.display_name}')
-        await member.edit(nick=DEFAULT_NAME, reason="Name does not match the pattern.")
+        if(DRY_RUN == 'false'):
+            await member.edit(nick=DEFAULT_NAME, reason="Name does not match the pattern.")
 
 
 # Events
