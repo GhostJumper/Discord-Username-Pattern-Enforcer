@@ -24,6 +24,6 @@ docker run \
     -e DISCORD_SERVER_ID=Your_Server_ID \
     -e DISCORD_BOT_TOKEN=Your_Token \
     -e DRY_RUN=true \
-    unrea1/discord-username-pattern-enforcer:2
+    unrea1/discord-username-pattern-enforcer:3
 ```
 ⚠️ **Note:** This application will not rename any users unless `DRY_RUN` is set to `false`. ⚠️

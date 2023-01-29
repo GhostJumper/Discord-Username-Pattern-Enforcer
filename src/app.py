@@ -45,7 +45,7 @@ def get_misnamed_members() -> list[discord.Member]:
 
 async def rename_members(members: list[discord.Member]):
     for member in members:
-        if(DRY_RUN == 'false'):
+        if(DRY_RUN.lower() == 'false'):
             logging.info(f'Renamed: {member.name} | {member.display_name} to {DEFAULT_NAME}')
             await member.edit(nick=DEFAULT_NAME, reason="Name does not match the pattern.")
         else:
