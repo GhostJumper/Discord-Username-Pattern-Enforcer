@@ -1,5 +1,7 @@
 # 💬 Discord Username Pattern Enforcer
 
+<img src="https://raw.githubusercontent.com/GhostJumper/Discord-Username-Pattern-Enforcer/master/README/images/icon.png" width=20%>
+
 ## 💡 Purpose
 
 This application 💻 enables automatic renaming of users in a Discord server 📡, if their username 🧑 does not conform to the established server pattern, thereby eliminating the manual process of renaming each user individually.
