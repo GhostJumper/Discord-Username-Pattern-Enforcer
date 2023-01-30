@@ -1,6 +1,6 @@
 # 💬 Discord Username Pattern Enforcer
 
-<img src="https://raw.githubusercontent.com/GhostJumper/Discord-Username-Pattern-Enforcer/master/README/images/icon.png" width=20%>
+<img src="https://raw.githubusercontent.com/GhostJumper/Discord-Username-Pattern-Enforcer/main/README/images/icon.png" width=20%>
 
 ## 💡 Purpose
 
